@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+
+body {
+  font-family: 'Segoe UI', Tahoma;
+  letter-spacing: 1px;
+  background-image: url('back-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu {
+  width: 80vw;
+  margin: 0 auto;
+  color: white;
+  padding: 40px;
+}
+
+h1 {
+  margin: 1rem auto 2rem;
+  text-align: center;
+  font-family: 'Rubik Puddles', cursive;
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Rubik Puddles', cursive;
+  letter-spacing: 4px;
+  margin-bottom: 3rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 3rem;
+}
+
+.dish {
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.price {
+  float: right;
+  width: 20vw;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1020px) {
+  body {
+    background-position: center;
+    height: 100vh;
+  }
+
+  .menu {
+    padding: 10px 0 0 1rem;
+    width: 95vw;
+  }
+
+  h1 {
+    margin: 0 auto 1rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 2rem;
+    background-position: right;
+    background-image: linear-gradient(rgba(40, 42, 41, 0.73) 98%, rgb(46, 50, 38) 99%, rgb(97, 95, 48) 100%), url('back-img.jpg');
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    padding-right: 20px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  li {
+    width: 90vw;
+  }
+
+  .dish {
+    display: block;
+  }
+}
