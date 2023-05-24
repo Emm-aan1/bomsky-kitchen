@@ -74,7 +74,7 @@ li {
   body {
     width: 100vw;
     height: 100vh;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     background-position: right;
     background-image: linear-gradient(rgba(40, 42, 41, 0.73) 98%, rgb(46, 50, 38) 99%, rgb(97, 95, 48) 100%), url('back-img.jpg');
   }
@@ -87,7 +87,6 @@ li {
 
   h2 {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
   }
 
   li {
@@ -96,5 +95,13 @@ li {
 
   .dish {
     display: block;
+    margin-top: 3.5rem;
+  }
+
+  .price {
+    background: rgba(128, 128, 128, 0.6);
+    padding: 0.5rem;
+    width: fit-content;
+    border-radius: 5px;
   }
 }
