@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
 body {
   font-family: 'Segoe UI', Tahoma;
   letter-spacing: 1px;
@@ -74,14 +76,19 @@ li {
   body {
     width: 100vw;
     height: 100vh;
-    padding-bottom: 4rem;
+    padding: 2rem 0 4rem;
     background-position: right;
     background-image: linear-gradient(rgba(40, 42, 41, 0.73) 98%, rgb(46, 50, 38) 99%, rgb(97, 95, 48) 100%), url('back-img.jpg');
   }
 
+  h1,
+  h2 {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+
   h1 {
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.7rem;
     padding-right: 20px;
   }
 
@@ -91,6 +98,10 @@ li {
 
   li {
     width: 90vw;
+  }
+
+  .dish:first-child {
+    margin-top: 2rem;
   }
 
   .dish {
