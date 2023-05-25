@@ -101,8 +101,8 @@ li {
     margin-bottom: 1.5rem;
   }
 
-  h4 {
-    display: none;
+  .specials h2 {
+    margin-bottom: 2rem;
   }
 
   .soup .dish {
@@ -144,6 +144,10 @@ li {
     margin-bottom: 1rem;
   }
 
+  .soup h2 {
+    margin-bottom: 2rem;
+  }
+
   li {
     width: 90vw;
   }
@@ -157,6 +161,11 @@ li {
     margin-top: 3.5rem;
   }
 
+  .launch .dish {
+    width: 70vw;
+    margin-top: 5px;
+  }
+
   .price {
     background: rgba(128, 128, 128, 0.6);
     padding: 0.5rem;
@@ -164,21 +173,23 @@ li {
     border-radius: 5px;
   }
 
-  /* .soup .menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
-    width: 100%;
-    height: 100%;
-  } */
-
-  .soup ul li .price:last-child {
-    margin-bottom: 2rem;
-  }
-
   .extra .dish {
     display: inline;
+  }
+
+  .specials .dish,
+  .soup .dish {
+    display: inline-block;
+    width: 70vw;
+    margin-top: 5px;
+  }
+
+  .launch .price {
+    margin-top: -2rem;
+  }
+
+  .soup .price {
+    margin-top: 1rem;
   }
 
   .extra .price {
