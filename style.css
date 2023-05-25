@@ -33,6 +33,15 @@ h2 {
   margin-bottom: 3rem;
 }
 
+h2 a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+h2 a:hover {
+  color: grey;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -53,11 +62,38 @@ li {
   font-weight: bold;
 }
 
+.soup {
+  overflow-y: scroll;
+  background-position: center center;
+}
+
+.soup .dish {
+  font-size: 1.1rem;
+}
+
 @media screen and (max-width: 1020px) {
   body {
     background-position: center;
     overflow-y: scroll;
     height: 100vh;
+  }
+
+  .soup {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 0;
+    background-position: right;
+    background-image: linear-gradient(rgba(40, 42, 41, 0.73) 98%, rgb(46, 50, 38) 99%, rgb(97, 95, 48) 100%), url('back-img.jpg');
+  }
+
+  .soup .dish {
+    width: 70vw;
+    display: flex;
+    flex: wrap;
+  }
+
+  .soup .price {
+    margin-top: -2rem;
   }
 
   .menu {
@@ -72,6 +108,10 @@ li {
   h2 {
     margin-bottom: 1.5rem;
   }
+
+  h4 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -83,9 +123,17 @@ li {
     background-image: linear-gradient(rgba(40, 42, 41, 0.73) 98%, rgb(46, 50, 38) 99%, rgb(97, 95, 48) 100%), url('back-img.jpg');
   }
 
+  .soup {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 0;
+    background-position: right;
+    background-image: linear-gradient(rgba(40, 42, 41, 0.73) 98%, rgb(46, 50, 38) 99%, rgb(97, 95, 48) 100%), url('back-img.jpg');
+  }
+
   h1,
   h2 {
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Rubik Puddles', cursive;
   }
 
   h1 {
