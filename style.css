@@ -11,6 +11,12 @@ body {
   overflow-y: hidden;
 }
 
+.soup {
+  overflow-y: scroll;
+  background-position: center;
+}
+
+
 .menu {
   width: 80vw;
   margin: 0 auto;
@@ -26,6 +32,10 @@ h1 {
   letter-spacing: 4px;
 }
 
+.extra h1 {
+  margin-top: 0;
+}
+
 h2 {
   text-align: center;
   font-family: 'Rubik Puddles', cursive;
@@ -33,7 +43,7 @@ h2 {
   margin-bottom: 3rem;
 }
 
-h2 a {
+a {
   text-decoration: none;
   color: aliceblue;
 }
@@ -52,6 +62,7 @@ li {
 }
 
 .dish {
+  font-size: 1.1rem;
   font-weight: bold;
   line-height: 20px;
 }
@@ -60,15 +71,6 @@ li {
   float: right;
   width: 20vw;
   font-weight: bold;
-}
-
-.soup {
-  overflow-y: scroll;
-  background-position: center center;
-}
-
-.soup .dish {
-  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 1020px) {
@@ -84,16 +86,6 @@ li {
     padding: 2rem 0;
     background-position: right;
     background-image: linear-gradient(rgba(40, 42, 41, 0.73) 98%, rgb(46, 50, 38) 99%, rgb(97, 95, 48) 100%), url('back-img.jpg');
-  }
-
-  .soup .dish {
-    width: 70vw;
-    display: flex;
-    flex: wrap;
-  }
-
-  .soup .price {
-    margin-top: -2rem;
   }
 
   .menu {
@@ -112,17 +104,21 @@ li {
   h4 {
     display: none;
   }
+
+  .soup .dish {
+    width: 70vw;
+    display: flex;
+    flex: wrap;
+  }
+
+  .soup .price {
+    margin-top: -2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-    padding: 2rem 0;
-    background-position: right;
-    background-image: linear-gradient(rgba(40, 42, 41, 0.73) 98%, rgb(46, 50, 38) 99%, rgb(97, 95, 48) 100%), url('back-img.jpg');
-  }
 
+  body,
   .soup {
     width: 100vw;
     height: 100vh;
@@ -169,5 +165,14 @@ li {
 
   .soup ul li .price:last-child {
     margin-bottom: 2rem;
+  }
+
+  .extra .dish {
+    display: inline;
+  }
+
+  .extra .price {
+    width: 50px;
+    text-align: center;
   }
 }
