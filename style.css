@@ -126,7 +126,7 @@ li {
   .soup {
     width: 100vw;
     height: 100vh;
-    padding: 2rem 0;
+    padding: 2rem 0 3rem;
     background-position: right;
     background-image: linear-gradient(rgba(40, 42, 41, 0.73) 98%, rgb(46, 50, 38) 99%, rgb(97, 95, 48) 100%), url('back-img.jpg');
   }
